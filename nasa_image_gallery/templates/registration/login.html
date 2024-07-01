@@ -13,5 +13,10 @@
             <button type="submit" class="btn btn-primary btn-block">Ingresar</button>
         </div>
     </form>
+    {% if messages %}
+            {% for message in messages %}
+                <p style="margin-top: 8px;color: red;">{{ message }}</p>
+            {% endfor %}
+    {% endif %}
 </div>
 {% endblock %}
